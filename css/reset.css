@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'fonts';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont.woff2') format('woff2'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+  }
+
+.fangda {
+    font-family: "fonts";
+}
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, img, li,p, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    font: 12px "Microsoft YaHei", Arial;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight: normal;
+    /* font-size: 100%; */
+}
+em,i{
+    font-style: normal;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    color: #666666;
+    text-decoration: none;
+}
+input{
+    outline:none;
+}
+img{
+    vertical-align: middle;
+}
+/* 万能消除浮动 */
+.clearfix{
+     *zoom:1;   /*解决IE兼容 */
+}
+.clearfix::after{
+    content:' ';
+    display: block;
+    height: 0;
+    clear:both;
+    overflow: hidden;
+    visibility: hidden;
+}

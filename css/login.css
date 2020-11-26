@@ -1,0 +1,95 @@
+.wrap{
+    width: 1349px;
+    height: 100%;
+}
+.container{
+    width: 1130px;
+    height: 98px;
+    margin: 0 auto;
+}
+.header{
+    width: 200px;
+    height: 98px;
+}
+.header a{
+    width: 200px;
+    height: 98px;
+    cursor: pointer;
+}
+.banner{
+    width: 1349px;
+    height: 588px;
+    position: relative;
+}
+.banner img{
+    width: 1349px;
+    height: 588px;
+}
+.box{
+    width: 410px;
+    height: 526px;
+    background: #fff;
+    position: absolute;
+    top: 180px;
+    left: 800px;
+}
+.top{
+    padding: 27px 0 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+}
+.top .line{
+    width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+    background: #e0e0e0;
+}
+.account{
+    width: 410px;
+}
+.account input{
+    width: 306px;
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    margin-left: 52px;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.account .login{
+    color: #fff;
+    background: #ff6700;
+}
+.account p{
+    margin-left: 170px;
+    margin-top: 10px;
+}
+.account img{
+    margin-left: 110px;
+    margin-top: 160px;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    padding-top: 100px;
+    /* text-align: center; */
+}
+.nav ul{
+    width: 800px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 549px;
+}
+.nav ul li{
+    padding: 0 0 10px 10px;
+    float: left;
+}
+.nav p{
+    width: 600px;
+    margin-left: 440px;
+}
