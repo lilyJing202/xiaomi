@@ -25,7 +25,7 @@ task('script', async ()=>{
 
 // 处理HTML
 task('html', async ()=>{
-  src('./pages/*.html')
+  src('./*.html')
   .pipe(dest('./dist'))
   .pipe(load.connect.reload())
 })
@@ -40,9 +40,9 @@ task('sass', async ()=>{
 
 // 监听文件变化
 task('watch', async ()=>{
-  watch('./pages/*.html',series('html'))
-  watch('./sass/*.scss',series('sass'))
-  watch('./img/*.*',series('img'))
+  watch('./*.html',series('html'))
+  watch('./*.scss',series('sass'))
+  watch('./images/img/*.*',series('img'))
   watch('./js/*.js',series('script'))
 })
 
@@ -55,4 +55,4 @@ task('connect', async ()=>{
   })
 })
 
-task('dev', series('delDist'))
+task('dev', series('delDist','img','script','html','watch'))

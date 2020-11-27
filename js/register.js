@@ -27,11 +27,12 @@ register.onclick=function(){
           res1 = json.slice(start);//{"err":0,"msg":"登录成功"}
         //   console.log(res1);
         //   res2=JSON.parse(res1);//将JSON格式的字符串转成JSON对象  不然无法遍历就无法使用   获取的数据都要进行使用
-          alert(res1)
+          // alert(res1)
           if(res1==='{"err":-4,"msg":"账号已被占用"}'){
               alert('账号已被占用,请重新注册')
             location.href='register.html'
           }else{
+            alert('恭喜注册成功')
             location.href='xiaomi.html' 
           }
             

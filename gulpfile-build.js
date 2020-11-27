@@ -10,7 +10,7 @@ async function delDist(){
 
 // 处理图片
 async function img(){
-  src('./img/*.*')
+  src('.images/img/*.*')
   .pipe(dest('./dist/img'))
 }
 
@@ -41,7 +41,7 @@ async function html(){
   return new Promise((resolve,reject)=>{
     setTimeout(()=>{// 延迟执行html任务
       resolve()
-      src(['./rev/**/*.json','./pages/*.html'])
+      src(['./data/*.json','./*.html'])
       .pipe(load.revCollector({
         replaceReved: true// 根据之前生成的json配置，用带哈希值的文件替换原来文件
       }))
@@ -56,6 +56,5 @@ task('build', async ()=>{
   await delDist()
   await img()
   await script()
-  await sass()
   await html()
 })
