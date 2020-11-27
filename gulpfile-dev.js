@@ -10,7 +10,7 @@ task('delDist', async ()=>{
 
 // 处理图片
 task('img', async ()=>{
-  src('./img/*.*')
+  src('./images/img/*.*')
   .pipe(dest('./dist/img'))
   .pipe(load.connect.reload())
 })
@@ -55,4 +55,4 @@ task('connect', async ()=>{
   })
 })
 
-task('dev', series('delDist','img','html','script','sass','connect','watch'))
+task('dev', series('delDist'))
